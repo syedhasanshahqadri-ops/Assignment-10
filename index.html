@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE CODERS</title>
+</head>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.site-header {
+    width: 100%;
+    padding: 35px 15px;
+    background: #fff;
+}
+
+/* SAB KUCH EK HI LINE */
+.nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* ================= PHOTON ================= */
+
+.logo {
+    flex-shrink: 0;
+    margin-right: 80px;
+}
+
+.logo a {
+    color: #000;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+/* ================= LINKS ================= */
+
+.navbar {
+    flex-shrink: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-links li a {
+    color: #111;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.nav-links li a:hover,
+.nav-links li .active {
+    color: #20c997;
+}
+
+
+/* ================= ICONS ================= */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+    padding-right: 15px;
+}
+
+.social-icons a {
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-icons a:hover {
+    color: #20c997;
+}
+
+
+/* ================= GALLERY ================= */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 25px;
+    left: -15px;
+
+    width: 200px;
+    padding: 8px 0;
+
+    background: #fff;
+    border-top: 2px solid #20c997;
+
+    list-style: none;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+
+    display: none;
+    z-index: 9999;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 13px 20px;
+
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+.dropdown-menu li a:hover {
+    background: #fafafa;
+    color: #20c997;
+}
+
+
+/* ================= SUB MENU ================= */
+
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: -8px;
+    left: 100%;
+
+    width: 180px;
+    padding: 8px 0;
+
+    background: #fff;
+    border-top: 2px solid #20c997;
+
+    list-style: none;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+
+    display: none;
+}
+
+.sub-dropdown:hover > .sub-menu {
+    display: block;
+}
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photon</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            width: 100%;
+            padding: 35px 14px;
+        }
+
+        .header-row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        /* ================= LOGO ================= */
+
+        .logo {
+            flex-shrink: 0;
+            margin-right: 80px;
+        }
+
+        .logo a {
+            color: #000;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        /* ================= NAV ================= */
+
+        nav {
+            flex-shrink: 0;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .links > li {
+            position: relative;
+            list-style: none;
+        }
+
+        .links > li > a {
+            color: #111;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .links > li > a:hover,
+        .links > li > a.active {
+            color: #20c997;
+        }
+
+        /* ================= ICONS ================= */
+
+        .icons {
+            margin-left: auto;
+
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .icons a {
+            color: #111;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .icons a:hover {
+            color: #20c997;
+        }
+
+        /* ================= GALLERY ================= */
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 25px;
+            left: -15px;
+
+            width: 200px;
+
+            padding: 8px 0;
+
+            background: white;
+            border-top: 2px solid #20c997;
+
+            list-style: none;
+
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+
+            display: none;
+
+            z-index: 9999;
+        }
+
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            position: relative;
+            list-style: none;
+        }
+
+        .dropdown-menu li a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 13px 20px;
+
+            color: #777;
+            text-decoration: none;
+
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+
+        .dropdown-menu li a:hover {
+            color: #20c997;
+            background: #fafafa;
+        }
+
+        /* ================= SUB MENU ================= */
+
+        .sub-menu {
+            position: absolute;
+
+            top: -8px;
+            left: 100%;
+
+            width: 180px;
+
+            padding: 8px 0;
+
+            background: white;
+            border-top: 2px solid #20c997;
+
+            list-style: none;
+
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+
+            display: none;
+        }
+
+        .sub-dropdown:hover > .sub-menu {
+            display: block;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="header-row">
+
+        <!-- PHOTON -->
+        <div class="logo">
+            <a href="#">Photon</a>
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav>
+
+            <ul class="links">
+
+                <li>
+                    <a href="#" class="active">HOME</a>
+                </li>
+
+
+                <!-- GALLERY -->
+                <li class="dropdown">
+
+                    <a href="#">
+                        GALLERY⌄
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="#">Nature</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Portrait</a>
+                        </li>
+
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Architecture</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Animals</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Sports</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Travel</a>
+                        </li>
+
+
+                        <!-- SUB MENU -->
+                        <li class="sub-dropdown">
+
+                            <a href="#">
+                                Sub Menu
+                                <span>›</span>
+                            </a>
+
+                            <ul class="sub-menu">
+
+                                <li>
+                                    <a href="#">Menu 1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Menu 2</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Menu 3</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <li>
+                    <a href="#">SERVICES</a>
+                </li>
+
+                <li>
+                    <a href="#">BLOG</a>
+                </li>
+
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="#">REVIEWS</a>
+                </li>
+
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- SOCIAL ICONS -->
+        <div class="icons">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+</body>
+</html>
+</body>
+</html>
